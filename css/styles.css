@@ -1,0 +1,274 @@
+body {
+  background-color: rgba(255, 255, 255, 1);
+  font-family: "Montserrat", sans-serif;
+  display: flex; /*flexbox pensa layout come righe e colonne se non specifico direzione di defualt usa row*/
+  flex-direction: row; /*se non specifico direzione di default usa row*/
+  /*display flex va sempre applicato a un elemento parent*/
+  max-width: 1200px; /*massima larghezza 1200px tuttavia se diminuisco larghezza schermata contenuto si rimpicciolisce*/
+}
+
+p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #595959;
+}
+
+li {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+
+  color: #595959;
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+.subtitle {
+  color: #fb6d3a;
+}
+
+.sidebar {
+  width: 370px;
+  background-color: #1e2939;
+  padding-top: 40px;
+}
+
+.sidebar h3 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  color: #ffffff;
+}
+.sidebar h3.contacts {
+  margin: 0px 0px 8px 0px;
+}
+.sidebar-content {
+  margin-top: 50px;
+  margin-left: 40px;
+}
+.contacts-link {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+
+  color: #ffffff;
+
+  opacity: 0.5;
+}
+.phone-number {
+  text-decoration: none;
+}
+
+.tech-skills-container ul,
+.soft-skills-container ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.tech-skills-container li::before,
+.soft-skills-container li::before {
+  content: "\2022";
+  font-weight: 700;
+  font-size: 14px;
+  color: #fb6d3a;
+  width: 10px;
+  display: inline-block;
+}
+.tech-skills-container li,
+.soft-skills-container li {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+
+  color: #ffffff;
+}
+
+.sidebar p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+
+  color: #ffffff;
+}
+
+.project-section ::marker {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+
+  color: #000000;
+}
+
+.sidebar img {
+  width: 370px;
+}
+
+.tech-skills-container > h3 {
+  margin-top: 47px;
+  margin-bottom: 8px;
+}
+
+.tech-skills-container > ul {
+  margin: 0;
+}
+.soft-skills-container > h3 {
+  margin: 44px 0 8px 0;
+}
+.soft-skills-container > ul {
+  margin: 0;
+}
+
+/*main content styles*/
+.main-content {
+  width: calc(100% - 370px);
+  padding: 102px 217px 107px 88px;
+}
+.summary {
+  margin-bottom: 40px;
+}
+.summary > h4 {
+  margin: 0px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+.summary > h2 {
+  margin: 19px 0px 24px 0px;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 55px;
+
+  color: #000000;
+}
+.summary > p {
+  margin: 0px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+
+  color: #595959;
+}
+
+.project-section > h3 {
+  margin: 0px;
+}
+.project-section ol {
+  padding: 0;
+}
+.project-section > ol li {
+  margin: 8 0 1.5em 0;
+  padding: 0px;
+  counter-increment: item; /*item indica elemento selezionato*/
+  list-style-type: none;
+}
+
+.project-section li:before {
+  display: inline-block;
+  width: 1em;
+  padding-right: 13px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  content: counter(item) "."; /*setta numero di fianco a lista*/
+  text-align: right;
+}
+.project-section a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+
+  text-decoration-line: underline;
+
+  color: #595959;
+}
+
+.project-section span {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+
+  color: #000000;
+}
+.work__experience {
+  margin: 51px 0px 0px 0px;
+}
+
+.experience h3 {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+
+  color: #000000;
+  margin: 12px 0;
+}
+
+.experience > p,
+.education > p {
+  margin: 0 0 8px 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #a8a8a8;
+}
+
+.experience > h4 {
+  margin: 20px 0 12px 0;
+}
+
+.experience > ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.experience > ul li {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.experience > ul li:before {
+  content: "\2022";
+  font-weight: 700;
+  font-size: 14px;
+  color: #595959;
+  width: 10px;
+  display: inline-block;
+}
+
+/*education section*/
+.education > h3 {
+  margin: 43px 0 12px 0;
+}
+.education > h4 {
+  margin: 0 0 11px 0;
+}
+.education > h5 {
+  margin: 11px 0 12px 0px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
